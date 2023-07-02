@@ -1,4 +1,4 @@
-# VSCODE plugings:
+# VSCODE plugins:
 
 * Path Intellisense
 * Bracket Pair Colorizer
