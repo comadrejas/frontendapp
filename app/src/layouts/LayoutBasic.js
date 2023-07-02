@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import {useStaticQuery, graphql} from "gatsby";
+import {useStaticQuery, graphql, Link} from "gatsby";
+import "./LayoutBasic.css";
+
 
 export default function LayoutBasic(props){
 
@@ -18,7 +20,13 @@ export default function LayoutBasic(props){
 
     return (
       <div>
-        <h1>{data.site.siteMetadata.title}</h1>
+        <div className='header'>
+            <h1>{data.site.siteMetadata.title}</h1>            
+            <div className='menu'>
+                <Link to="/">index</Link>
+                <Link to="/about-me">about</Link>
+            </div>
+        </div>        
         {children}
       </div>
     )
