@@ -3,10 +3,10 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import LayoutBasic from "../layouts/LayoutBasic"
 
-export default function IndexPage(){
+export default function AboutMe(){
   return (
     <LayoutBasic>
-        <h2>we are here!</h2>
+        <h2>About me!</h2>
     </LayoutBasic>
   )
 }
